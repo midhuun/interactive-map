@@ -1,0 +1,293 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "ADMIN": "United States", "ISO_A2": "US" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-101, 40],
+            [-99, 40],
+            [-99, 43],
+            [-101, 43],
+            [-101, 40]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "ADMIN": "Austria", "ISO_A2": "AT" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [13, 47],
+            [16, 47],
+            [16, 49],
+            [13, 49],
+            [13, 47]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "ADMIN": "Sweden", "ISO_A2": "SE" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [15, 59],
+            [18, 59],
+            [18, 61],
+            [15, 61],
+            [15, 59]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "ADMIN": "India", "ISO_A2": "IN" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [77, 20],
+            [80, 20],
+            [80, 23],
+            [77, 23],
+            [77, 20]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "ADMIN": "Germany", "ISO_A2": "DE" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [9, 50],
+            [12, 50],
+            [12, 53],
+            [9, 53],
+            [9, 50]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "ADMIN": "France", "ISO_A2": "FR" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [2, 46],
+            [5, 46],
+            [5, 49],
+            [2, 49],
+            [2, 46]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "ADMIN": "Italy", "ISO_A2": "IT" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [10, 42],
+            [13, 42],
+            [13, 45],
+            [10, 45],
+            [10, 42]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "ADMIN": "United Kingdom", "ISO_A2": "GB" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-2, 51],
+            [1, 51],
+            [1, 54],
+            [-2, 54],
+            [-2, 51]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "ADMIN": "China", "ISO_A2": "CN" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [104, 35],
+            [107, 35],
+            [107, 38],
+            [104, 38],
+            [104, 35]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "ADMIN": "Japan", "ISO_A2": "JP" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [138, 36],
+            [141, 36],
+            [141, 39],
+            [138, 39],
+            [138, 36]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "ADMIN": "Canada", "ISO_A2": "CA" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-106, 55],
+            [-103, 55],
+            [-103, 58],
+            [-106, 58],
+            [-106, 55]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "ADMIN": "Brazil", "ISO_A2": "BR" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-53, -10],
+            [-50, -10],
+            [-50, -7],
+            [-53, -7],
+            [-53, -10]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "ADMIN": "Australia", "ISO_A2": "AU" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [133, -28],
+            [136, -28],
+            [136, -25],
+            [133, -25],
+            [133, -28]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "ADMIN": "South Korea", "ISO_A2": "KR" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [127, 37],
+            [129, 37],
+            [129, 39],
+            [127, 39],
+            [127, 37]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "ADMIN": "Indonesia", "ISO_A2": "ID" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [106, -6],
+            [108, -6],
+            [108, -4],
+            [106, -4],
+            [106, -6]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "ADMIN": "Spain", "ISO_A2": "ES" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0, 40],
+            [3, 40],
+            [3, 43],
+            [0, 43],
+            [0, 40]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "ADMIN": "Mexico", "ISO_A2": "MX" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-102, 22],
+            [-99, 22],
+            [-99, 25],
+            [-102, 25],
+            [-102, 22]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "ADMIN": "South Africa", "ISO_A2": "ZA" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [25, -30],
+            [28, -30],
+            [28, -27],
+            [25, -27],
+            [25, -30]
+          ]
+        ]
+      }
+    }
+  ]
+}
