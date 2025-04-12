@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, GeoJSON, CircleMarker, Tooltip } from 'react-l
 import 'leaflet/dist/leaflet.css';
 import rawData from '../data/regionusage.json';
 import regionShapes from '../assets/countries.geo.json';
+import { IoClose } from 'react-icons/io5';
 
 const regionColors = {
   US: '#1f77b4',
@@ -117,7 +118,13 @@ const NetworkMap = () => {
       </div>
 
       {selectedRegion && (
-        <div className="w-full md:w-1/3 p-6 bg-white rounded-lg shadow-lg border border-gray-200">
+        <div className="w-full relative md:w-1/3 p-6 bg-white rounded-lg shadow-lg border border-gray-200">
+          <button
+            onClick={() => setSelectedRegion(null)}
+            className="absolute cursor-pointer top-3 right-3 h-8 w-8 rounded-full flex justify-center items-center  bg-red-500 text-white"
+          >
+            <IoClose />
+          </button>
           <h2 className="text-2xl text-gray-800 font-semibold mb-3">
             Region: <span className="text-gray-600">{selectedRegion.code}</span>
           </h2>
