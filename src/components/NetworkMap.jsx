@@ -2,9 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { MapContainer, TileLayer, GeoJSON, CircleMarker, Tooltip } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import rawData from '../data/regionusage.json';
-import regionShapes from '../assets/countries.geo.json';
 import { IoClose } from 'react-icons/io5';
-
 const regionColors = {
   US: '#1f77b4',
   AT: '#ff7f0e',
@@ -77,16 +75,15 @@ const NetworkMap = () => {
     });
     return result;
   }, []);
-
+  console.log(regionUsage);
   return (
     <div className="w-full h-screen flex">
       <div className="flex-1 relative">
         <MapContainer center={[30, 0]} zoom={2} style={{ height: '100%', width: '100%' }}>
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution="&copy; OpenStreetMap contributors"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           />
-          <GeoJSON data={regionShapes} style={{ fillOpacity: 0.1, color: '#ccc' }} />
 
           {Object.entries(regionUsage).map(([code, usage]) => {
             const center = regionCenters[code];
@@ -100,7 +97,7 @@ const NetworkMap = () => {
                 pathOptions={{
                   color: regionColors[code] || '#cccccc',
                   fillColor: regionColors[code] || '#cccccc',
-                  fillOpacity: 0.8,
+                  fillOpacity: 0.4,
                 }}
                 eventHandlers={{
                   click: () =>
@@ -116,7 +113,6 @@ const NetworkMap = () => {
           })}
         </MapContainer>
       </div>
-
       {selectedRegion && (
         <div className="w-full relative md:w-1/3 p-6 bg-white rounded-lg shadow-lg border border-gray-200">
           <button
@@ -131,7 +127,11 @@ const NetworkMap = () => {
           <div className="p-4 bg-gray-50 rounded-lg shadow-sm">
             <p className="text-lg text-gray-600">
               <span className="font-medium text-gray-700">Total Data Usage:</span>{' '}
-              <span className="text-gray-900 font-semibold">{selectedRegion.usage} MB</span>
+              <span className="text-gray-900 font-semibold">
+                {selectedRegion.usage / 1000 > 1
+                  ? `${(selectedRegion.usage / 1024).toFixed(2)} GB`
+                  : selectedRegion.usage + ' MB'}
+              </span>
             </p>
           </div>
         </div>
